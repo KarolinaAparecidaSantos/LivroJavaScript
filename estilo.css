@@ -1,0 +1,31 @@
+  .fundo {
+    background-image: url('imagens/PaginaPrincipal/linguagens-paradigmas.jpg');
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+  }
+
+  .fundo2 {
+    background-image: url('imagens/PaginaPrincipal/fundo2.png');
+    /*background-size: cover; /* Faz a imagem cobrir toda a tela */
+    background-repeat: repeat;
+  }
+
+  .h1{
+    color: #fff
+  }
+
+  .h2{
+    color: #fff
+  }
+
+  #conteudo {
+    width: 1500px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #252525;
+    height: 2100px;
+  }
+
+  a:visited {
+    color: aquamarine;
+  }
