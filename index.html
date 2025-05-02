@@ -28,62 +28,58 @@
     <div>
         <span class="toggle" onclick="toggleLista(this)"><h3>▶ Tópicos do Capítulo 1</h3></span>
         <ul class="lista">
-          <li>Palavra 1</li>
-          <li>Palavra 2</li>
-          <li>Palavra 3</li>
+          <li>JavaScript</li>
+          <li>Saída de dados com alert() e console.log()</li>
+          <li>Variáveis e Constantes</li>
+          <li>Entrada de dados com prompt()</li>
+          <li>Comentários</li>
+          <li>Tipos de Dados e conversões de tipo</li>
+          <li>Exemplos de entrada, processamento e saída</li> <!-- Talvez eu retire esta parte. -->
         </ul>
       </div>
+      <hr>
 
     <h2 class="h2"><a href='capitulo2.html'>Capítulo 2 - Integração com HTML</a></h2>
     <div>
-        <span class="toggle" onclick="toggleLista(this)">▶ Tópicos do Capítulo 2</span>
+        <span class="toggle" onclick="toggleLista(this)"><h3>▶ Tópicos do Capítulo 2</h3></span>
         <ul class="lista">
           <li>Item A</li>
           <li>Item B</li>
           <li>Item C</li>
         </ul>
       </div>
-
+      <hr>
     <h2 class="h2">Capítulo 3</h2>
     <div>
-        <span class="toggle" onclick="toggleLista(this)">▶ Tópicos do Capítulo 3</span>
+        <span class="toggle" onclick="toggleLista(this)"><h3>▶ Tópicos do Capítulo 3</h3></span>
         <ul class="lista">
           <li>Exemplo X</li>
           <li>Exemplo Y</li>
           <li>Exemplo Z</li>
         </ul>
       </div>
-
+      <hr>
     <h2 class="h2">Capítulo 4</h2>
+    <hr>
     <h2 class="h2">Capítulo 5</h2>
+    <hr>
     <h2 class="h2">Capítulo 6</h2>
+    <hr>
     <h2 class="h2">Capítulo 7</h2>
+    <hr>
     <h2 class="h2">Capítulo 8</h2>
+    <hr>
     <h2 class="h2">Capítulo 9</h2>
+    <hr>
     <h2 class="h2">Capítulo 10</h2>
+    <hr>
     <h2 class="h2">Capítulo 11</h2>
+    <hr>
     <h2 class="h2">Capítulo 12</h2>
+    <hr>
     <h2 class="h2">Capítulo 13</h2>
 
     </div>
-    <script>
-        function toggleLista(toggleElement) {
-          const lista = toggleElement.nextElementSibling;
-          if (lista.style.display === "none" || lista.style.display === "") {
-            lista.style.display = "block";
-            toggleElement.textContent = toggleElement.textContent.replace("▶", "▼").replace("Mostrar", "Ocultar");
-          } else {
-            lista.style.display = "none";
-            toggleElement.textContent = toggleElement.textContent.replace("▼", "▶").replace("Ocultar", "Mostrar");
-          }
-        }
-    
-        // Garante que todas as listas comecem escondidas
-        document.addEventListener("DOMContentLoaded", () => {
-          document.querySelectorAll(".lista").forEach(lista => {
-            lista.style.display = "none";
-          });
-        });
-      </script>
+    <script src="script.js"></script>   <!-- Conecta o JavaScript externo -->
 </body>
 </html>
