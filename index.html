@@ -3,15 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Livro Lógica JS</title>
     <link rel="stylesheet" type="text/css" href="estilo.css"> 
+    <style>
+        .lista {
+          display: none;
+          margin-top: 5px;
+          padding-left: 20px;
+        }
+        .toggle {
+          cursor: pointer;
+          color: blue;
+          text-decoration: underline;
+          display: inline-block;
+          margin-bottom: 5px;
+        }
+      </style>
 </head>
 <body class="fundo">
-    <h1 class="h1">Livro Lógica de Programação e Algoritmos com JavaScript - Edécio Fernando Iepsen - Editora: novatec</h1>
+    <div id="conteudoIndex">
+    <h1 class="tituloPrincipal">Livro Lógica de Programação e Algoritmos com JavaScript - Edécio Fernando Iepsen - Editora: novatec</h1>
     <img src="imagens/PaginaPrincipal/Capa_livro.png" />
     <h2 class="h2"><a href='capitulo1.html'>Capítulo 1 - Introdução</a></h2>
+    <div>
+        <span class="toggle" onclick="toggleLista(this)"><h3>▶ Tópicos do Capítulo 1</h3></span>
+        <ul class="lista">
+          <li>Palavra 1</li>
+          <li>Palavra 2</li>
+          <li>Palavra 3</li>
+        </ul>
+      </div>
+
     <h2 class="h2"><a href='capitulo2.html'>Capítulo 2 - Integração com HTML</a></h2>
+    <div>
+        <span class="toggle" onclick="toggleLista(this)">▶ Tópicos do Capítulo 2</span>
+        <ul class="lista">
+          <li>Item A</li>
+          <li>Item B</li>
+          <li>Item C</li>
+        </ul>
+      </div>
+
     <h2 class="h2">Capítulo 3</h2>
+    <div>
+        <span class="toggle" onclick="toggleLista(this)">▶ Tópicos do Capítulo 3</span>
+        <ul class="lista">
+          <li>Exemplo X</li>
+          <li>Exemplo Y</li>
+          <li>Exemplo Z</li>
+        </ul>
+      </div>
+
     <h2 class="h2">Capítulo 4</h2>
     <h2 class="h2">Capítulo 5</h2>
     <h2 class="h2">Capítulo 6</h2>
@@ -22,5 +64,26 @@
     <h2 class="h2">Capítulo 11</h2>
     <h2 class="h2">Capítulo 12</h2>
     <h2 class="h2">Capítulo 13</h2>
+
+    </div>
+    <script>
+        function toggleLista(toggleElement) {
+          const lista = toggleElement.nextElementSibling;
+          if (lista.style.display === "none" || lista.style.display === "") {
+            lista.style.display = "block";
+            toggleElement.textContent = toggleElement.textContent.replace("▶", "▼").replace("Mostrar", "Ocultar");
+          } else {
+            lista.style.display = "none";
+            toggleElement.textContent = toggleElement.textContent.replace("▼", "▶").replace("Ocultar", "Mostrar");
+          }
+        }
+    
+        // Garante que todas as listas comecem escondidas
+        document.addEventListener("DOMContentLoaded", () => {
+          document.querySelectorAll(".lista").forEach(lista => {
+            lista.style.display = "none";
+          });
+        });
+      </script>
 </body>
 </html>
