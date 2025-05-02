@@ -10,14 +10,25 @@
     background-repeat: repeat;
   }
 
+  .tituloPrincipal{
+    color:crimson
+  }
+
   .h1{
     color: #fff
   }
 
   .h2{
-    color: #fff
+    color: #FF4500;
   }
 
+  #conteudoIndex {
+    width: 1500px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #F0F8FF; /*cor Alice Blue - Do site: https://www.ranoya.com/books/public/css/corescss.php*/
+    height: 2100px;
+  }
   #conteudo {
     width: 1500px;
     margin-right: auto;
@@ -27,5 +38,5 @@
   }
 
   a:visited {
-    color: aquamarine;
+    color: #4B0082; /*Nome da cor: Indigo. */
   }
