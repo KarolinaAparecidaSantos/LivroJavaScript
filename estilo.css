@@ -31,13 +31,6 @@
     background-color: #F0F8FF; /*cor Alice Blue - Do site: https://www.ranoya.com/books/public/css/corescss.php*/
     height: 2100px;
   }
-  #conteudo {
-    width: 1500px;
-    margin-right: auto;
-    margin-left: auto;
-    background-color: #252525;
-    height: 2100px;
-  }
 
   a:visited {
     color: #DC143C; /*Nome da cor: Crimson */
