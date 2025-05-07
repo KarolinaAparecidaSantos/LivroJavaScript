@@ -12,7 +12,7 @@
       margin-right: auto;
       margin-left: auto;
       background-color: #252525;
-      height: 4100px;
+      height: 8000px;
     }
   </style>
 
@@ -55,7 +55,7 @@
       <p>São exemplos de nomes válidos de variáveis:<strong> cidade, nota1, primeiroCliente, novoSalario, precoFinal, dataVenda.</strong></p>
       <p>Para declarar uma variável em JavaScript, podemos utilizar os comandos var, let ou const. Nas últimas versões do JavaScript, passou a recomendar o uso de const ou let.</p>
       <p>Atribuição é feita com o sinal de igual "=". Exemplo: const idade = 35</p>
-      <p>o uso de const tem se tornado padrão da linguagem. Declarar uma variável com const serve para indicar que essa variável deve possuir uma única atribuição de valor e não será alterada no decorrer do programa. Então, caso o conteúdo da variável possa ser alterado, declare-a com let. Em todos os demais casos, opte pelo const. </p>
+      <p>O uso de const tem se tornado padrão da linguagem. Declarar uma variável com const serve para indicar que essa variável deve possuir uma única atribuição de valor e não será alterada no decorrer do programa. Então, caso o conteúdo da variável possa ser alterado, declare-a com let. Em todos os demais casos, opte pelo const. </p>
   <table border="1">
     <tr>
       <td><img src="imagens/capitulo1/variaveis1.png" /></td>
@@ -76,6 +76,7 @@
   </table>
       <p>Outra forma de exibir mensagens que contenham um texto fixo e o conteúdo de uma variável em JavaScript é com o uso da chamada Template Strings. Para isso, deve-se delimitar a mensagem entre duas ´´ (crases) e inserir o nome das variáveis usando a sintaxe: ${nomeVar}. Observe a linha a seguir:</p>
       <p>alert(`Olá ${nome}`);</p>
+      <img src="imagens/capitulo1/usarCrase.png" />
       <p>O uso de ponto e vírgula “;” no final dos comandos em programas JavaScript é opcional.</p>
 
   <hr>
@@ -92,6 +93,79 @@
 
   <hr>
   <h3>1.9 Tipos de Dados e conversões de tipo</h3>
+  <p>Em JavaScript, os tipos principais de dados são strings (variáveis de texto), números e valores booleanos (true ou false).</p>
+  <p>No exemplo abaixo, o resultado do cálculo é exibido ao lado de cada variável como um comentário (//).</p>
+  <table border="1">
+    <tr>
+      <td><img src="imagens/capitulo1/exem_ex_3html.png" /></td>
+      <td><img src="imagens/capitulo1/exem_ex_3_2html.png" /></td>
+    </tr>
+  </table>
+  <p>Nesse exemplo, a variável "a" do tipo string recebe “20” (const a = “20”). Ela é entendida como sendo do tipo string por estar delimitada por aspas.</p>
+  <p>Nas operações de multiplicação, divisão e subtração, a linguagem converte esse texto em número e o valor retornado está de acordo com o esperado.</p>
+  <p>Contudo, quando realizamos a adição, o valor de retorno é diferente do padrão, pois a linguagem CONCATENA (+) o texto com o número.</p>
+  <br>
+  <p>Para resolver esse problema, precisamos converter o texto em número. Isso pode ser feito pelos métodos Number(), parseInt() e parseFloat(). Vamos utilizar o método Number() para facilitar o processo de aprendizagem. Dessa forma, modifique a linha que declara a variável “e” para conter o método Number():</p>
+  <p>const e = Number(a) + 2 // e = 22</p>
+  <table border="1">
+    <tr>
+      <td><img src="imagens/capitulo1/strenum1.png" /></td>
+      <td><img src="imagens/capitulo1/strenum2.png" /></td>
+    </tr>
+  </table>
+  <p>Agora, a variável "a" é inicialmente convertida em número, e, após, ocorre a soma do valor 2, gerando como resultado o valor 22.</p>
+  <p>E, para converter variáveis para o tipo string, devemos utilizar o método toString().</p>
+  <br>
+  <p>As entradas de dados realizadas com o método prompt() criam variáveis do tipo string, exceto se houver uma função de conversão de dados como Number(). Exibir uma variável que não recebeu uma atribuição de valor vai gerar uma saída “undefined”.</p>
+  <p>O exemplo a seguir 1.4 declara variáveis e exibe seus tipos a partir do comando TYPEOF.</p>
+  <img src="imagens/capitulo1/tiposdevariaveis.png" />
+  <br>
+  <br>
+  <p>Também é possível verificar se o número é inteiro ou possui decimais: Number.isInteger() faz essa verificação:</p>
+  <img src="imagens/capitulo1/tipos2.png" />
+
+  <hr>
+  <h3>1.10 Exemplos de entrada, processamento e saída</h3>
+  <p>Vimos que no geral, para elaborar um programa simples, é necessário realizar três etapas: entrada, processamento e saída. Vamos agora implementar alguns exemplos de  algoritmos de programação sequencial que realizam essas etapas.</p>
+  <p>Abaixo, um exemplo de programação sequencial:</p>
+  <p>a) Elaborar um programa que leia um número. Calcule e informe o dobro desse número.</p>
+  <img src="imagens/capitulo1/exemploSequencial1.png" />
+  <table border="1">
+    <tr>
+      <td><img src="imagens/capitulo1/exemploSequencial2.png" /></td>
+      <td><img src="imagens/capitulo1/exemploSequencial3.png" /></td>
+    </tr>
+  </table>
+  <p>b) Elaborar um programa que leia dois números. Calcule e informe a soma desses números.</p>
+  <img src="imagens/capitulo1/sequencial2_1.png" /><br>
+  <img src="imagens/capitulo1/sequencial2_2.png" /><br>
+  <img src="imagens/capitulo1/sequencial2_3.png" /><br>
+  <img src="imagens/capitulo1/sequencial2_4.png" /><br>
+  <p>c) Elaborar um programa que leia o valor de um jantar. Calcule e informe o valor da taxa do garçom (10%) e o valor total a ser pago.</p>
+  <p>Primeiro fazer um exemplo de possíveis dados:<br>
+    Valor do jantar R$: 80.00<br>
+    Valor do Garçom R$: 8.0<br>
+    Total a pagar R$: 88.00<br>
+    </p>
+  <p>Tenha cuidado em digitar valores com decimais separados por ponto, e não vírgula. Observe que o método toFixed(2) é adicionado às variáveis de saída. Ele serve para indicar que o valor a ser apresentado deve conter 2 casas decimais.</p>  
+  <img src="imagens/capitulo1/exemplo1_7.png" />
+  <table border="1">
+    <tr>
+      <td><img src="imagens/capitulo1/exemplo1_7_2.png" /></td>
+      <td><img src="imagens/capitulo1/exemplo1_7_3.png" /></td>
+    </tr>
+  </table>
+  <p>d) Elaborar um programa que leia a duração de uma viagem em dias e horas. Calcule e informe a duração total da viagem em números de horas.</p>
+  <p>Dados:<br>
+    Nº Dias: 2<br>
+    Nº Horas: 5<br>
+    Total de Horas: 53<br>
+    </p>
+    <img src="imagens/capitulo1/exem_um_8_1.png" /><br>
+    <img src="imagens/capitulo1/exem_um_8_2.png" /><br>
+    <img src="imagens/capitulo1/exem_um_8_3.png" /><br>
+    <img src="imagens/capitulo1/exem_um_8_4.png" /><br>
+
 
     </div>
 </body>
