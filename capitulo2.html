@@ -11,7 +11,7 @@
           margin-right: auto;
           margin-left: auto;
           background-color: #252525;
-          height: 1000px;
+          height: 9000px;
         }
       </style>
 </head>
@@ -32,11 +32,21 @@
         </tr>
       </table>
     <hr>
-
-
-
-
-
+    <h3>2.4 Métodos querySelector() e getElementById()</h3>
+      <p>Para referenciar um elemento HTML identificado no documento, podemos utilizar os métodos <b><u>querySelector()</u></b> ou <b><u>getElementById()</u></b>. Esses métodos permitem referenciar qualquer elemento da página – como um campo de formulário, um parágrafo, um botão, uma imagem, entre outros. Com o método <b><u>getElementById()</u></b>, para que um elemento HTML seja referenciado, ele precisa conter um atributo <b>id</b>. Já o método <b><u>querySelector()</u></b> é mais amplo, e permite criar uma referência a um elemento HTML pela sua tag name, id ou classe. Observe os exemplos:</p>
+      <img src="imagens/capitulo2/img5.png" />
+      <p>Uma desvantagem do querySelector() é que ele não é suportado por versões antigas dos navegadores (navegadores lançados antes de 2008 ou 2009).<br> Para resolver isso surgiram os chamados “transpiladores” de código. O Babel (babeljs.io) é um dos principais softwares desse segmento para javaScript.</p>
+      <p>Observe ainda, nos exemplos, que podemos armazenar a referência a um elemento em uma variável e depois obter a sua propriedade, como descrito a seguir:</p>
+      <img src="imagens/capitulo2/img6.png" />
+      <p>Ou, então, utilizar um único comando, acessando diretamente a propriedade que queremos obter, como a seguir.</p>
+      <img src="imagens/capitulo2/img7.png" />
+      <p>Se o programa trabalhar com o mesmo elemento mais de uma vez, é recomendado armazenar a localização dele em uma variável (exemplo de duas linhas). Caso contrário, você pode fazer uma referência direta a sua propriedade (exemplo de uma linha). Nos exemplos do livro, daremos preferência pelo uso dos comandos em duas linhas, a fim de padronizar o formato (facilitar o aprendizado). E os nomes de variáveis, em campos de formulários serão precedidos pelas letras in (input), e espaços de saída, quando identificados, serão precedidos por out (output).</p>
+      <hr>
+      <h3>2.5 Introdução a eventos e funções</h3>
+      <p>Muito da programação JavaScript construída em páginas web é desenvolvida desta forma: elas são acionadas a partir da ocorrência de um evento. Quando o usuário executa uma ação, o programa responde ao evento do usuário com uma ou mais ações. O evento mais comum de ser programado para um formulário é o clique no botão submit. Mas há diversos outros, como modificar o conteúdo de um campo, clicar sobre um elemento da página, sair de um campo, carregar a página, entre outros. Mais detalhes sobre os eventos serão apresentados no capítulo 8.</p>
+      <p>Para criar um evento e definir o que será executado quando este evento ocorrer, deve-se utilizar uma palavra reservada para indicar qual evento a linguagem ficará na “escuta”. A palavra reservada pode ser, por exemplo, <b><u>submit, change, click, blur ou load</u></b>. Para adicionar um ouvinte de evento a um elemento da página, utiliza-se o método <b><u>addEventListenert()</u></b>, com o evento e o nome de uma função ou uma arrow function (função de seta) com os comandos a serem executados. Observe a sintaxe desse método:</p>
+      <img src="imagens/capitulo2/img8.png" />
+      <hr>
 
     </div>
 </body>
