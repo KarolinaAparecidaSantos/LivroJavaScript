@@ -11,7 +11,7 @@
           margin-right: auto;
           margin-left: auto;
           background-color: #252525;
-          height: 9000px;
+          height: 8500px;
         }
       </style>
 </head>
@@ -152,9 +152,13 @@
       <p>O programa Java Script inicia pela referência aos elementos da página. Após, obtêm-se os valores informados nos campos <i>inQuilo</i> e <i>inConsumo</i>. Como os valores estão em grandezas diferentes (quilo e gramas), é necessário converter quilo para gramas (quilo/1000). Esse valor é então multiplicado pelo consumo do cliente. O próximo passo é apresentar o valor a ser pago pelo cliente. Observe a ocorrência das etapas de entrada (obtenção do preço do quilo e do consumo do cliente), processamento (cálculo do valor) e saída (exibição do valor a pagar), discutidas no Capítulo 1. Elas também estão presentes nos exercícios propostos a seguir. </p>
       <hr>
       <h3>2.10 Exercícios</h3>
-
-      <p>*Parei na página 59.</p>
-
+      <hr>
+      <h3>2.11 Considerações finais do capítulo</h3>
+      <p>Para referenciar um elemento HTML da página, seja um campo de formulário ou um parágrafo de texto, é necessário identificá-lo no código HTML e, em seguida, utilizar os métodos <i>queryselector()</i> ou <i>getElementById()</i> no programa JavaScript. A identificação consiste em adicionar o atributo <i>id="nome"</i> à tag HTML do elemento. A partir da criação da referência ao elemento, é possível recuperar o conteúdo de um campo de formulário (propriedade <i>value</i>), bem como alterar um texto exibido em um parágrafo ou linha de cabeçalho do documento (propriedade <i>innerText)</i>.</p>
+      <p>A integração do programa JavaScript com o documento HTML pode ocorrer a partir de três formas: <br>a) inserir uma seção <i>script></i> no próprio documento HTML; <br>b) criar um novo arquivo JavaScript e usar rotinas de tratamento de eventos DOM; <br> ou c) criar um novo arquivo JavaScript e registrar um ouvinte de evento, também chamado modelo de eventos DOM nível 2.</p>
+      <p>Esta última (c) é a forma atualmente recomendada e será utilziada nos exemplos do livro. Separar o código HTML do código JavaScript é considerado boa prática de programação, pois HTML e JavaScript têm papéis diferentes no processo de construção de um site. A ligação do HTML com JavaScript, nesse modelo, ocorre a partir de inserção da tag &lt;script src="nomearq.js"&gt; &lt;/script&gt; no documento HTML.</p>
+      <hr>
+      <h3>Fim do capítulo 2</h3>
     </div>
 </body>
 </html>
