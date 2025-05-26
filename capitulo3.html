@@ -24,6 +24,9 @@
     <div id="conteudo">
         <h2><a href='index.html'>Voltar para a página principal</a></h2>
         <h1 class="h1">CAPÍTULO 03 - Construção de algoritmos com Node.js</h1>
+        <hr>
+        <p>Observação: Neste capítulo, adicionamos o pacote <i>prompt-sync()</i>, que permite a entrada de dados via prompt de comandos.</p>
+        <hr>
         <p>Nos exemplos construídos nos dois capítulos iniciais deste livro, não foi necessário instalar nenhum software adicional na sua máquina. O browser já contém um interpretador para executar os programas JavaScript.</p>
         <p>Existe também outro modo de construir algoritmos com JavaScript, que é utilizando o Node.js. Nesse modo, semelhante ao que acontece com linguagens de programação tradicionais como Python, Java e C#, é necessário instalar a linguagem na sua máquina e executar os programas a partir de um prompt de linha de comandos.</p>
         <p>O Node.js é, conforme o que está documentado em sua página oficial (nodejs.dev), um ambiente de execução de programas JavaScript gratuito, de código aberto e multiplataforma que permite aos desenvolvedores escrever programas de linha de comandos e scripts do lado do servidor fora de um navegador. Os recursos e comandos utilizados para a criação de estruturas de condições, repetições e vetores, que serão apresentados nos capítulos seguintes são os mesmos. O que muda é que você não estará rodando o seu programa a partir de um navegador web, e sim a partir de um prompt de comandos.</p>
@@ -46,7 +49,15 @@
         <h3>3.3 Criação e execução de programas com o Node.js</h3>
         <p>Vamos agora criar e executar o nosso primeiro programa em JavaScript a partir do Node.js. Abra o Visual Studio Code (você pode fazer isso digitando <i>code .</i> na linha de comando), crie um novo arquivo com o nome <b>ex3_1.js.</b> Vamos ajustar um programa de cada um dos capítulos anteriores para rodar neste modelo. Veja e insira o seguinte código no arquivo: </p>
         <p><i>Código JavaScript do programa Soma 2 Números (ex3_1.js)</i></p>
-
+        <img src="imagens/capitulo3/ig2.png" alt="imagem do código JavaScript">
+        <p>Compare com o Exemplo 1.6 e observe a semelhança! Neste modelo, não é necessário inserir os comandos entre as tags &lt;script&gt; e &lt;/script&gt;. Contudo, precisamos acrescentar o comando <b>const prompt = require("prompt-sync")()</b>. O comando <b>console.log()</b> exibe a resposta do programa e também pode ser utilizado nos programas que rodam no browser, como indicado na seção 1.5.</p>
+        <p>Abaixo, imagem do Exemplo 1.6 página 37 no capítulo 1, que faz a Soma de dois números (exemplo ex1_6.tml).</p>
+        <img src="imagens/capitulo3/ig3.png" alt="imagem do Exemplo 1.6 que faz a soma de dois números">
+        <p>Após salvar o arquivo, volte ao prompt de comandos e execute a instrução <b>node ex3_1</b>. Não é necessário informar a extenção do nome do arquivo (.js). A seguir, um exemplo da execução desse programa.</p>
+        <img src="imagens/capitulo3/ig4.png" alt="Imagem do prompt de comando do Windows">
+        <hr>
+        <p>O exemplo do caítulo 2 que vamos adaptar para rodar a partir do Node.js é o programa <b>ex2_1.js</b>. Crie o arquivo <b>ex3_2.js</b> com o seguinte código:</p>
+        <p><i>Código JavaScript do programa Revenda (ex3_2.js)</i></p>
 
         <p>Parei na página 67.</p>
 
