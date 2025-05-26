@@ -13,7 +13,12 @@
           background-color: #252525;
           height: 8500px;
         }
+
+        ol, ul, i, b, strong{
+          color: aqua;
+        }
       </style>
+
 </head>
 <body class="fundo2">
     <div id="conteudo">
@@ -21,7 +26,29 @@
         <h1 class="h1">CAPÍTULO 03 - Construção de algoritmos com Node.js</h1>
         <p>Nos exemplos construídos nos dois capítulos iniciais deste livro, não foi necessário instalar nenhum software adicional na sua máquina. O browser já contém um interpretador para executar os programas JavaScript.</p>
         <p>Existe também outro modo de construir algoritmos com JavaScript, que é utilizando o Node.js. Nesse modo, semelhante ao que acontece com linguagens de programação tradicionais como Python, Java e C#, é necessário instalar a linguagem na sua máquina e executar os programas a partir de um prompt de linha de comandos.</p>
-        <p>Parei na página 64.</p>
+        <p>O Node.js é, conforme o que está documentado em sua página oficial (nodejs.dev), um ambiente de execução de programas JavaScript gratuito, de código aberto e multiplataforma que permite aos desenvolvedores escrever programas de linha de comandos e scripts do lado do servidor fora de um navegador. Os recursos e comandos utilizados para a criação de estruturas de condições, repetições e vetores, que serão apresentados nos capítulos seguintes são os mesmos. O que muda é que você não estará rodando o seu programa a partir de um navegador web, e sim a partir de um prompt de comandos.</p>
+        <p>Este capítulo tem por objetivo apresentar o processo de construção de algoritmos utilizando o Node.js. Caso você não pretenda instalar o Node.js na sua máquina, pode pular para o capítulo seguinte e prosseguir seus estudos em JavaScript com a construção de Algoritmos que rodam no navegador web. Caso você goste desse formato de desenvolver seus estudos de técnicas de programação em JavaScript, utilizando o Node.js - que se assemelha ao formato tradicional de ensino de programação, siga os passos descritos nas próximas seções.</p>
+        <hr>
+        <h3>3.1 Instalação do Node.js</h3>
+        <p>Para instalar o Node.js, vá até o site do ambiente <i>nodejs.dev</i> e selecione a opção <b>download</b>. Baixe o instalador de acordo com o sistema operacional da sua máquina. Após baixar, execute-o e nas próximas telas, <b>Next > Next > Install > Finish</b>, concluída a instalação, acesse o prompt de comandos e execute o comando <i>node -v</i>. Ele serve para exibir a versão do Node.js instalada, além de indicar que o processo de instalação foi realizado com sucesso.</p>
+        <img src="imagens/capitulo3/ig1.png" alt="imagem do comando node -v no prompt de comando do Windows, exibindo a versão do node em seguida.">
+        <hr>
+        <h3>3.2 Adição de pacote para entrada de dados</h3>
+        <p>O passo seguinte à instalação do Node.js é adicionar um pacote que permitirá que os nossos programas façam a entrada de dados via linha de comando. Vamos utilizar o <i>prompt-sync()</i>. Existem diversos outros, mas esse contém os recuros básicos necessários para o desenvolvimento de Algoritmos - que é a proposta deste livro. Vamos inicialmente criar a pasta <i>cap03</i>, em <i>livrosjs</i>(como nos exemplos anteriores). Podemos fazer a criação da pasta via linha de comandos. Nas linhas de código a seguir, acessamos a pasta livrosjs, intalams o pacote <i>prompt-sync</i>, criamos a pasta <i>cap03</i> e, na sequência, entramos nesta pasta:</p>
+        <ol>
+            <li>C:\Users\edecio>cd\livrosjs</li>
+            <li>C:\livrosjs>npm i prompt-sync</li>
+            <li>C:\livrosjs>md cap03</li>
+            <li>C:\livrosjs>cd cap03</li>
+        </ol>
+        <p>Após a execução desses comandos, foi adicionada ao diretório (pasta) <i>livrosjs</i> a pasta <i>node-modules</i>. Ela contém os pacotes que foram adicionados ao projeto. Além dela, também foram criados arquivos <b>.json</b> - tema abordado no Capítulo 12. É importante destacar que os programas a serem desenvolvidos com o Node.js (e que utilizam o prompt-sync) precisam estar em pastas que ficam dentro do <i>livrosjs</i>, uma vez que o pacote <i>prompt-sync</i> foi instalado nela.</p>
+        <hr>
+        <h3>3.3 Criação e execução de programas com o Node.js</h3>
+      
+
+
+
+        <p>Parei na página 67.</p>
 
     </div>
     
